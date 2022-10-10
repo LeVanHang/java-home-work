@@ -1,15 +1,17 @@
-package set_get_uses;
-
 public class Student {
     private String name;
-    private int age;
+    private byte age;
 
-    public Student() {
+    public Student(String hang, int age) {
     }
 
-    public Student(String name, int age) {
+    public Student(String name, byte age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Student() {
+
     }
 
     public String getName() {
@@ -20,11 +22,11 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
+    public byte getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(byte age) {
         this.age = age;
     }
 
